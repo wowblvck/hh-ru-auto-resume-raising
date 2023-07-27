@@ -23,6 +23,19 @@ python3 -m pip install -r requirements.txt
 ```
 python3 bot.py
 ```
+
+### Docker
+Выполнить требования к `.env`, указанные выше.
+
+Для сборки образа 
+```
+docker build -t [your-image-name] .
+```
+
+Для запуска 
+```
+docker run -d --rm --env-file .env [your-image-name]
+```
 ### Принцип работы
 1) Выполнить пункты из инструкции
 2) Активировать бота (если бот был активирован ввести команду /start)
